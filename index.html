@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmarker</title>
+</head>
+<body class="">
+    <div class="container py-5">
+   
+        <h1 class="text-center mb-4">Bookmarker</h1>
+
+        <p class="mt-5">.........................................................................................................................................................................................................................................................................................................</p>
+        
+        <h2 class="text-center text-success mt-3 mb-5">📖 Bookmark your favorite sites 📖</h2>
+
+        <div class="row  mb-4">
+            <div class="">
+                <div class="mb-3">
+                    <label for="siteName" class="form-label"> 📑Site Name</label>
+                    <input type="text" id="siteName" class="form-control" placeholder="Enter Site Name">
+                </div>
+                <div class="mb-3">
+                    <label for="siteUrl" class="form-label"> 🔗Website URL</label>
+                    <input type="text" id="siteUrl" class="form-control" placeholder="Enter Website URL">
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="btn btn-submit px-5" onclick="addBookmark()">Submit</button>
+                    </div>
+                    <div>
+                        <p>........................................................................................................................................................................................................................................................................................................</p>
+                    </div>
+        </div>
+
+        <div class="row justify-content-center ">
+            <div class="mt-5">
+                <table class="table table-border-down text-center mb-5">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookmarksList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+   
+  <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/script.js"></script>
+</body>
+</html>
+
